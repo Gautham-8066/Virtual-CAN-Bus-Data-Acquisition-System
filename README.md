@@ -1,7 +1,7 @@
 # Virtual CAN Bus Data Acquisition System (Digital Twin)
 A simulation of an automotive CAN (Controller Area Network) architecture running entirely in software. This project implements a Digital Twin of a vehicle's telemetry system, featuring a simulated Engine Control Unit (ECU) and a real-time Dashboard with Signal Processing.
 
-🚀 Project Overview
+## Project Overview
 In automotive engineering, testing software on real vehicles is dangerous and expensive. This project solves that by emulating the hardware layer.
 
 The Engine: A Python script acting as an ECU, generating telemetry data (RPM, Speed) with realistic physics (gear shifts, acceleration) and simulated sensor noise.
@@ -10,7 +10,7 @@ The Network: Uses the Linux Kernel's vcan (Virtual CAN) module to create a virtu
 
 The Dashboard: A real-time plotting tool that listens to the bus, decodes binary packets, and applies a Moving Average Filter to smooth out the simulated sensor noise.
 
-🛠️ Architecture
+## Architecture
 The system follows a decoupled Producer-Consumer architecture:
 
 [Engine Sim] --(Packets ID 0x100)--> [vcan0 Bus] --(Decode)--> [Dashboard]
@@ -21,14 +21,14 @@ Data Frame: ID 0x100, Payload: 4 Bytes
 
 Encoding: Big-Endian Unsigned Short (>HH)
 
-⚡ Prerequisites
+## Prerequisites
 OS: Linux (Native or WSL2)
 
 Python: 3.8+
 
 System Tools: can-utils, net-tools
 
-📦 Installation
+## Installation
 Clone the Repository
 
 Bash
