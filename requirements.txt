@@ -1,0 +1,4 @@
+matplotlib
+python-can
+pyqt5
+statistics
