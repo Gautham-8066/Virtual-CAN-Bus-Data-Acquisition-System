@@ -6,7 +6,6 @@
 
 A simulation of an automotive **CAN (Controller Area Network)** architecture running entirely in software. This project implements a **Digital Twin** of a vehicle's telemetry system, featuring a simulated Engine Control Unit (ECU) and a real-time Dashboard with Signal Processing.
 
-![Dashboard Demo](demo.png)
 <img width="634" height="529" alt="Screenshot from 2025-12-06 16-19-00" src="https://github.com/user-attachments/assets/c1259380-447d-46b0-a3ed-3ac8ae729756" />
 
 ## Project Overview
